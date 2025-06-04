@@ -1,0 +1,106 @@
+name: milestone5
+
+topology:
+  nodes:
+    Fargo:
+      kind: linux
+      image: frrouting/frr:v7.5.1
+      network-mode: none
+      binds:
+        - Fargo/daemons:/etc/frr/daemons
+        - Fargo/frr.conf:/etc/frr/frr.conf
+    Seattle:
+      kind: linux
+      image: frrouting/frr:v7.5.1
+      network-mode: none
+      binds:
+        - Seattle/daemons:/etc/frr/daemons
+        - Seattle/frr.conf:/etc/frr/frr.conf
+    Phoenix:
+      kind: linux
+      image: frrouting/frr:v7.5.1
+      network-mode: none
+      binds:
+        - Phoenix/daemons:/etc/frr/daemons
+        - Phoenix/frr.conf:/etc/frr/frr.conf
+    Boston:
+      kind: linux
+      network-mode: none
+      image: frrouting/frr:v7.5.1
+      binds:
+        - Boston/daemons:/etc/frr/daemons
+        - Boston/frr.conf:/etc/frr/frr.conf
+    Philly:
+      kind: linux
+      network-mode: none
+      image: frrouting/frr:v7.5.1
+      binds:
+        - Philly/daemons:/etc/frr/daemons
+        - Philly/frr.conf:/etc/frr/frr.conf
+    Chicago:
+      kind: linux
+      network-mode: none
+      image: frrouting/frr:v7.5.1
+      binds:
+        - Chicago/daemons:/etc/frr/daemons
+        - Chicago/frr.conf:/etc/frr/frr.conf
+    Denver:
+      kind: linux
+      network-mode: none
+      image: frrouting/frr:v7.5.1
+      binds:
+        - Denver/daemons:/etc/frr/daemons
+        - Denver/frr.conf:/etc/frr/frr.conf
+    Houston:
+      kind: linux
+      network-mode: none
+      image: frrouting/frr:v7.5.1
+      binds:
+        - Houston/daemons:/etc/frr/daemons
+        - Houston/frr.conf:/etc/frr/frr.conf
+    Miami:
+      kind: linux
+      network-mode: none
+      image: frrouting/frr:v7.5.1
+      binds:
+        - Miami/daemons:/etc/frr/daemons
+        - Miami/frr.conf:/etc/frr/frr.conf
+    Spokane:
+      kind: linux
+      network-mode: none
+      image: frrouting/frr:v7.5.1
+      binds:
+        - Spokane/daemons:/etc/frr/daemons
+        - Spokane/frr.conf:/etc/frr/frr.conf
+    Portland:
+      kind: linux
+      network-mode: none
+      image: frrouting/frr:v7.5.1
+      binds:
+        - Portland/daemons:/etc/frr/daemons
+        - Portland/frr.conf:/etc/frr/frr.conf
+    NewYork:
+      kind: linux
+      network-mode: none
+      image: frrouting/frr:v7.5.1
+      binds:
+        - NewYork/daemons:/etc/frr/daemons
+        - NewYork/frr.conf:/etc/frr/frr.conf
+
+
+  links:
+    - endpoints: ["Fargo:s1-0", "Spokane:s1-0"]
+    - endpoints: ["Fargo:s1-1", "Phoenix:s1-1"]
+    - endpoints: ["Fargo:s1-2", "Chicago:s1-2"]
+    - endpoints: ["Fargo:s1-3", "NewYork:s1-1"]
+    - endpoints: ["Portland:s1-1", "Spokane:s1-2"]
+    - endpoints: ["Seattle:s1-0", "Spokane:s1-1"]
+    - endpoints: ["Portland:s1-0", "Seattle:s1-1"]
+    - endpoints: ["Denver:s1-0", "Phoenix:s1-0"]
+    - endpoints: ["Phoenix:s1-2", "Chicago:s1-0"]
+    - endpoints: ["Chicago:s1-3", "Boston:s1-1"]
+    - endpoints: ["Chicago:s1-1", "Philly:s1-1"]
+    - endpoints: ["Philly:s1-0", "Miami:s1-0"]
+    - endpoints: ["Miami:s1-1", "Houston:s1-0"]
+    - endpoints: ["Boston:s1-0", "NewYork:s1-0"]
+
