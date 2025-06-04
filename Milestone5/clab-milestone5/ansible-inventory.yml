@@ -1,0 +1,33 @@
+all:
+  vars:
+    # The generated inventory is assumed to be used from the clab host.
+    # Hence no http proxy should be used. Therefore we make sure the http
+    # module does not attempt using any global http proxy.
+    ansible_httpapi_use_proxy: false
+  children:
+    linux:
+      hosts:
+        clab-milestone5-Boston:
+          ansible_host: 
+        clab-milestone5-Chicago:
+          ansible_host: 
+        clab-milestone5-Denver:
+          ansible_host: 
+        clab-milestone5-Fargo:
+          ansible_host: 
+        clab-milestone5-Houston:
+          ansible_host: 
+        clab-milestone5-Miami:
+          ansible_host: 
+        clab-milestone5-NewYork:
+          ansible_host: 
+        clab-milestone5-Philly:
+          ansible_host: 
+        clab-milestone5-Phoenix:
+          ansible_host: 
+        clab-milestone5-Portland:
+          ansible_host: 
+        clab-milestone5-Seattle:
+          ansible_host: 
+        clab-milestone5-Spokane:
+          ansible_host: 

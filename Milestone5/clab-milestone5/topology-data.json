@@ -1,0 +1,592 @@
+{
+  "name": "milestone5",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "clab",
+      "mgmt": {
+        "network": "clab",
+        "bridge": "br-fa2d7a943edc",
+        "ipv4-subnet": "172.20.20.0/24",
+        "ipv4-gw": "172.20.20.1",
+        "ipv6-subnet": "3fff:172:20:20::/64",
+        "ipv6-gw": "3fff:172:20:20::1",
+        "mtu": 1500,
+        "external-access": true
+      }
+    }
+  },
+  "ssh-pub-keys": [],
+  "nodes": {
+    "Boston": {
+      "index": "0",
+      "shortname": "Boston",
+      "longname": "clab-milestone5-Boston",
+      "fqdn": "Boston.milestone5.io",
+      "group": "",
+      "labdir": "/mnt/c/Users/20825/Desktop/Milestone5/clab-milestone5/Boston",
+      "kind": "linux",
+      "image": "frrouting/frr:v7.5.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "",
+      "mgmt-ipv4-prefix-length": 0,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-fa2d7a943edc",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/mnt/c/Users/20825/Desktop/Milestone5/clab-milestone5/Boston",
+        "clab-node-longname": "clab-milestone5-Boston",
+        "clab-node-name": "Boston",
+        "clab-node-type": "",
+        "clab-owner": "tdx",
+        "clab-topo-file": "/mnt/c/Users/20825/Desktop/Milestone5/milestone5.clab.yml",
+        "containerlab": "milestone5"
+      },
+      "port-bindings": [
+      ]
+    },
+    "Chicago": {
+      "index": "1",
+      "shortname": "Chicago",
+      "longname": "clab-milestone5-Chicago",
+      "fqdn": "Chicago.milestone5.io",
+      "group": "",
+      "labdir": "/mnt/c/Users/20825/Desktop/Milestone5/clab-milestone5/Chicago",
+      "kind": "linux",
+      "image": "frrouting/frr:v7.5.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "",
+      "mgmt-ipv4-prefix-length": 0,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-fa2d7a943edc",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/mnt/c/Users/20825/Desktop/Milestone5/clab-milestone5/Chicago",
+        "clab-node-longname": "clab-milestone5-Chicago",
+        "clab-node-name": "Chicago",
+        "clab-node-type": "",
+        "clab-owner": "tdx",
+        "clab-topo-file": "/mnt/c/Users/20825/Desktop/Milestone5/milestone5.clab.yml",
+        "containerlab": "milestone5"
+      },
+      "port-bindings": [
+      ]
+    },
+    "Denver": {
+      "index": "2",
+      "shortname": "Denver",
+      "longname": "clab-milestone5-Denver",
+      "fqdn": "Denver.milestone5.io",
+      "group": "",
+      "labdir": "/mnt/c/Users/20825/Desktop/Milestone5/clab-milestone5/Denver",
+      "kind": "linux",
+      "image": "frrouting/frr:v7.5.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "",
+      "mgmt-ipv4-prefix-length": 0,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-fa2d7a943edc",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/mnt/c/Users/20825/Desktop/Milestone5/clab-milestone5/Denver",
+        "clab-node-longname": "clab-milestone5-Denver",
+        "clab-node-name": "Denver",
+        "clab-node-type": "",
+        "clab-owner": "tdx",
+        "clab-topo-file": "/mnt/c/Users/20825/Desktop/Milestone5/milestone5.clab.yml",
+        "containerlab": "milestone5"
+      },
+      "port-bindings": [
+      ]
+    },
+    "Fargo": {
+      "index": "3",
+      "shortname": "Fargo",
+      "longname": "clab-milestone5-Fargo",
+      "fqdn": "Fargo.milestone5.io",
+      "group": "",
+      "labdir": "/mnt/c/Users/20825/Desktop/Milestone5/clab-milestone5/Fargo",
+      "kind": "linux",
+      "image": "frrouting/frr:v7.5.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "",
+      "mgmt-ipv4-prefix-length": 0,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-fa2d7a943edc",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/mnt/c/Users/20825/Desktop/Milestone5/clab-milestone5/Fargo",
+        "clab-node-longname": "clab-milestone5-Fargo",
+        "clab-node-name": "Fargo",
+        "clab-node-type": "",
+        "clab-owner": "tdx",
+        "clab-topo-file": "/mnt/c/Users/20825/Desktop/Milestone5/milestone5.clab.yml",
+        "containerlab": "milestone5"
+      },
+      "port-bindings": [
+      ]
+    },
+    "Houston": {
+      "index": "4",
+      "shortname": "Houston",
+      "longname": "clab-milestone5-Houston",
+      "fqdn": "Houston.milestone5.io",
+      "group": "",
+      "labdir": "/mnt/c/Users/20825/Desktop/Milestone5/clab-milestone5/Houston",
+      "kind": "linux",
+      "image": "frrouting/frr:v7.5.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "",
+      "mgmt-ipv4-prefix-length": 0,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-fa2d7a943edc",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/mnt/c/Users/20825/Desktop/Milestone5/clab-milestone5/Houston",
+        "clab-node-longname": "clab-milestone5-Houston",
+        "clab-node-name": "Houston",
+        "clab-node-type": "",
+        "clab-owner": "tdx",
+        "clab-topo-file": "/mnt/c/Users/20825/Desktop/Milestone5/milestone5.clab.yml",
+        "containerlab": "milestone5"
+      },
+      "port-bindings": [
+      ]
+    },
+    "Miami": {
+      "index": "5",
+      "shortname": "Miami",
+      "longname": "clab-milestone5-Miami",
+      "fqdn": "Miami.milestone5.io",
+      "group": "",
+      "labdir": "/mnt/c/Users/20825/Desktop/Milestone5/clab-milestone5/Miami",
+      "kind": "linux",
+      "image": "frrouting/frr:v7.5.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "",
+      "mgmt-ipv4-prefix-length": 0,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-fa2d7a943edc",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/mnt/c/Users/20825/Desktop/Milestone5/clab-milestone5/Miami",
+        "clab-node-longname": "clab-milestone5-Miami",
+        "clab-node-name": "Miami",
+        "clab-node-type": "",
+        "clab-owner": "tdx",
+        "clab-topo-file": "/mnt/c/Users/20825/Desktop/Milestone5/milestone5.clab.yml",
+        "containerlab": "milestone5"
+      },
+      "port-bindings": [
+      ]
+    },
+    "NewYork": {
+      "index": "6",
+      "shortname": "NewYork",
+      "longname": "clab-milestone5-NewYork",
+      "fqdn": "NewYork.milestone5.io",
+      "group": "",
+      "labdir": "/mnt/c/Users/20825/Desktop/Milestone5/clab-milestone5/NewYork",
+      "kind": "linux",
+      "image": "frrouting/frr:v7.5.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "",
+      "mgmt-ipv4-prefix-length": 0,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-fa2d7a943edc",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/mnt/c/Users/20825/Desktop/Milestone5/clab-milestone5/NewYork",
+        "clab-node-longname": "clab-milestone5-NewYork",
+        "clab-node-name": "NewYork",
+        "clab-node-type": "",
+        "clab-owner": "tdx",
+        "clab-topo-file": "/mnt/c/Users/20825/Desktop/Milestone5/milestone5.clab.yml",
+        "containerlab": "milestone5"
+      },
+      "port-bindings": [
+      ]
+    },
+    "Philly": {
+      "index": "7",
+      "shortname": "Philly",
+      "longname": "clab-milestone5-Philly",
+      "fqdn": "Philly.milestone5.io",
+      "group": "",
+      "labdir": "/mnt/c/Users/20825/Desktop/Milestone5/clab-milestone5/Philly",
+      "kind": "linux",
+      "image": "frrouting/frr:v7.5.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "",
+      "mgmt-ipv4-prefix-length": 0,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-fa2d7a943edc",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/mnt/c/Users/20825/Desktop/Milestone5/clab-milestone5/Philly",
+        "clab-node-longname": "clab-milestone5-Philly",
+        "clab-node-name": "Philly",
+        "clab-node-type": "",
+        "clab-owner": "tdx",
+        "clab-topo-file": "/mnt/c/Users/20825/Desktop/Milestone5/milestone5.clab.yml",
+        "containerlab": "milestone5"
+      },
+      "port-bindings": [
+      ]
+    },
+    "Phoenix": {
+      "index": "8",
+      "shortname": "Phoenix",
+      "longname": "clab-milestone5-Phoenix",
+      "fqdn": "Phoenix.milestone5.io",
+      "group": "",
+      "labdir": "/mnt/c/Users/20825/Desktop/Milestone5/clab-milestone5/Phoenix",
+      "kind": "linux",
+      "image": "frrouting/frr:v7.5.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "",
+      "mgmt-ipv4-prefix-length": 0,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-fa2d7a943edc",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/mnt/c/Users/20825/Desktop/Milestone5/clab-milestone5/Phoenix",
+        "clab-node-longname": "clab-milestone5-Phoenix",
+        "clab-node-name": "Phoenix",
+        "clab-node-type": "",
+        "clab-owner": "tdx",
+        "clab-topo-file": "/mnt/c/Users/20825/Desktop/Milestone5/milestone5.clab.yml",
+        "containerlab": "milestone5"
+      },
+      "port-bindings": [
+      ]
+    },
+    "Portland": {
+      "index": "9",
+      "shortname": "Portland",
+      "longname": "clab-milestone5-Portland",
+      "fqdn": "Portland.milestone5.io",
+      "group": "",
+      "labdir": "/mnt/c/Users/20825/Desktop/Milestone5/clab-milestone5/Portland",
+      "kind": "linux",
+      "image": "frrouting/frr:v7.5.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "",
+      "mgmt-ipv4-prefix-length": 0,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-fa2d7a943edc",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/mnt/c/Users/20825/Desktop/Milestone5/clab-milestone5/Portland",
+        "clab-node-longname": "clab-milestone5-Portland",
+        "clab-node-name": "Portland",
+        "clab-node-type": "",
+        "clab-owner": "tdx",
+        "clab-topo-file": "/mnt/c/Users/20825/Desktop/Milestone5/milestone5.clab.yml",
+        "containerlab": "milestone5"
+      },
+      "port-bindings": [
+      ]
+    },
+    "Seattle": {
+      "index": "10",
+      "shortname": "Seattle",
+      "longname": "clab-milestone5-Seattle",
+      "fqdn": "Seattle.milestone5.io",
+      "group": "",
+      "labdir": "/mnt/c/Users/20825/Desktop/Milestone5/clab-milestone5/Seattle",
+      "kind": "linux",
+      "image": "frrouting/frr:v7.5.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "",
+      "mgmt-ipv4-prefix-length": 0,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-fa2d7a943edc",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/mnt/c/Users/20825/Desktop/Milestone5/clab-milestone5/Seattle",
+        "clab-node-longname": "clab-milestone5-Seattle",
+        "clab-node-name": "Seattle",
+        "clab-node-type": "",
+        "clab-owner": "tdx",
+        "clab-topo-file": "/mnt/c/Users/20825/Desktop/Milestone5/milestone5.clab.yml",
+        "containerlab": "milestone5"
+      },
+      "port-bindings": [
+      ]
+    },
+    "Spokane": {
+      "index": "11",
+      "shortname": "Spokane",
+      "longname": "clab-milestone5-Spokane",
+      "fqdn": "Spokane.milestone5.io",
+      "group": "",
+      "labdir": "/mnt/c/Users/20825/Desktop/Milestone5/clab-milestone5/Spokane",
+      "kind": "linux",
+      "image": "frrouting/frr:v7.5.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "",
+      "mgmt-ipv4-prefix-length": 0,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-fa2d7a943edc",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/mnt/c/Users/20825/Desktop/Milestone5/clab-milestone5/Spokane",
+        "clab-node-longname": "clab-milestone5-Spokane",
+        "clab-node-name": "Spokane",
+        "clab-node-type": "",
+        "clab-owner": "tdx",
+        "clab-topo-file": "/mnt/c/Users/20825/Desktop/Milestone5/milestone5.clab.yml",
+        "containerlab": "milestone5"
+      },
+      "port-bindings": [
+      ]
+    }
+  },
+  "links": [
+    {
+      "a": {
+        "node": "Fargo",
+        "interface": "s1-0",
+        "mac": "aa:c1:ab:d1:a3:bf",
+        "peer": "z"
+      },
+      "z": {
+        "node": "Spokane",
+        "interface": "s1-0",
+        "mac": "aa:c1:ab:54:85:c4",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "Fargo",
+        "interface": "s1-1",
+        "mac": "aa:c1:ab:06:78:b9",
+        "peer": "z"
+      },
+      "z": {
+        "node": "Phoenix",
+        "interface": "s1-1",
+        "mac": "aa:c1:ab:6d:bf:da",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "Fargo",
+        "interface": "s1-2",
+        "mac": "aa:c1:ab:d6:68:85",
+        "peer": "z"
+      },
+      "z": {
+        "node": "Chicago",
+        "interface": "s1-2",
+        "mac": "aa:c1:ab:34:c3:a4",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "Fargo",
+        "interface": "s1-3",
+        "mac": "aa:c1:ab:b6:e2:fb",
+        "peer": "z"
+      },
+      "z": {
+        "node": "NewYork",
+        "interface": "s1-1",
+        "mac": "aa:c1:ab:89:f7:a3",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "Portland",
+        "interface": "s1-1",
+        "mac": "aa:c1:ab:e6:bd:6c",
+        "peer": "z"
+      },
+      "z": {
+        "node": "Spokane",
+        "interface": "s1-2",
+        "mac": "aa:c1:ab:b7:f3:2f",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "Seattle",
+        "interface": "s1-0",
+        "mac": "aa:c1:ab:89:77:f2",
+        "peer": "z"
+      },
+      "z": {
+        "node": "Spokane",
+        "interface": "s1-1",
+        "mac": "aa:c1:ab:e8:37:e6",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "Portland",
+        "interface": "s1-0",
+        "mac": "aa:c1:ab:79:1a:e8",
+        "peer": "z"
+      },
+      "z": {
+        "node": "Seattle",
+        "interface": "s1-1",
+        "mac": "aa:c1:ab:e3:58:cf",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "Denver",
+        "interface": "s1-0",
+        "mac": "aa:c1:ab:d6:dc:99",
+        "peer": "z"
+      },
+      "z": {
+        "node": "Phoenix",
+        "interface": "s1-0",
+        "mac": "aa:c1:ab:4a:6d:b8",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "Phoenix",
+        "interface": "s1-2",
+        "mac": "aa:c1:ab:19:ee:04",
+        "peer": "z"
+      },
+      "z": {
+        "node": "Chicago",
+        "interface": "s1-0",
+        "mac": "aa:c1:ab:5b:85:47",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "Chicago",
+        "interface": "s1-3",
+        "mac": "aa:c1:ab:1d:72:56",
+        "peer": "z"
+      },
+      "z": {
+        "node": "Boston",
+        "interface": "s1-1",
+        "mac": "aa:c1:ab:eb:03:83",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "Chicago",
+        "interface": "s1-1",
+        "mac": "aa:c1:ab:8f:17:44",
+        "peer": "z"
+      },
+      "z": {
+        "node": "Philly",
+        "interface": "s1-1",
+        "mac": "aa:c1:ab:de:57:9a",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "Philly",
+        "interface": "s1-0",
+        "mac": "aa:c1:ab:3e:d0:08",
+        "peer": "z"
+      },
+      "z": {
+        "node": "Miami",
+        "interface": "s1-0",
+        "mac": "aa:c1:ab:3d:e2:ba",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "Miami",
+        "interface": "s1-1",
+        "mac": "aa:c1:ab:b7:56:a9",
+        "peer": "z"
+      },
+      "z": {
+        "node": "Houston",
+        "interface": "s1-0",
+        "mac": "aa:c1:ab:b3:81:bd",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "Boston",
+        "interface": "s1-0",
+        "mac": "aa:c1:ab:10:cf:ec",
+        "peer": "z"
+      },
+      "z": {
+        "node": "NewYork",
+        "interface": "s1-0",
+        "mac": "aa:c1:ab:aa:c3:5e",
+        "peer": "a"
+      }
+    }
+  ]
+}

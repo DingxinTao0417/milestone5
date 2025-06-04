@@ -1,0 +1,61 @@
+---
+Boston:
+    username: 
+    password: 
+    platform: linux
+    hostname: 
+Chicago:
+    username: 
+    password: 
+    platform: linux
+    hostname: 
+Denver:
+    username: 
+    password: 
+    platform: linux
+    hostname: 
+Fargo:
+    username: 
+    password: 
+    platform: linux
+    hostname: 
+Houston:
+    username: 
+    password: 
+    platform: linux
+    hostname: 
+Miami:
+    username: 
+    password: 
+    platform: linux
+    hostname: 
+NewYork:
+    username: 
+    password: 
+    platform: linux
+    hostname: 
+Philly:
+    username: 
+    password: 
+    platform: linux
+    hostname: 
+Phoenix:
+    username: 
+    password: 
+    platform: linux
+    hostname: 
+Portland:
+    username: 
+    password: 
+    platform: linux
+    hostname: 
+Seattle:
+    username: 
+    password: 
+    platform: linux
+    hostname: 
+Spokane:
+    username: 
+    password: 
+    platform: linux
+    hostname: 
